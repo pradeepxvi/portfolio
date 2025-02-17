@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main w-full fixed z-50">
+    <!-- started nav bar here  -->
+    <!-- ============================================================================================================ -->
+    <div class="header bg-gray-900 w-full flex justify-between items-center">
+      <div class="header_left lg:w-80">
+        <div class="logo">
+          <img src="./assets/mylogo.png" alt="pradeep logo" class="max-h-20 mix-blend-screen" />
+        </div>
+      </div>
+      <!-- started small nav bar here  -->
+      <!-- ============================================================================================================ -->
+      <div class="small_hader_right lg:hidden md:hidden xl:hidden ">
+        <i id="open_small_nav" class="fa-solid fa-bars text-white text-3xl mr-2"></i>
+        <!--  -->
+        <div id="small_nav" class="w-full h-screen fixed bg-gray-900 z-10 top-0 right-0 flex flex-col">
+          <div class="flex items-center justify-between px-3">
+            <img src="./assets/mylogo.png" alt="pradeep logo" class="max-h-20 mix-blend-screen" />
+            <i id="close_small_nav" class="fa-solid fa-xmark text-white text-3xl"></i>
+          </div>
+          <div class="flex flex-col gap-20">
+            <ul class="flex flex-col gap-10 mt-10">
+              <li class="w-80 mx-auto flex">
+                <a href="#home"
+                  class="text-white hover:font-bold flex-1 text-center rounded-full border p-2 hover:text-gray-500 text-lg bg-gray-800">Home</a>
+              </li>
+              <li class="w-80 mx-auto flex">
+                <a href="#"
+                  class="text-white hover:font-bold flex-1 text-center rounded-full border p-2 hover:text-gray-500 text-lg bg-gray-800">Projects</a>
+              </li>
+              <li class="w-80 mx-auto flex">
+                <a href="#contact"
+                  class="text-white hover:font-bold flex-1 text-center rounded-full border p-2 hover:text-gray-500 text-lg bg-gray-800">Contact</a>
+              </li>
+              <li class="w-80 mx-auto flex">
+                <a href="https://drive.google.com/file/d/1-9sgk9P-isdUUrrdypw-pIsd3iQl8dM9/view?usp=drive_link"
+                  class="text-white hover:font-bold flex-1 text-center rounded-full border p-2 hover:text-gray-500 text-lg bg-gray-800">Resume</a>
+              </li>
+            </ul>
+            <div class="flex justify-center items-center border gap-1 rounded-full relative">
+              <input type="text" placeholder="Search" name="" id=""
+                class="outline-none rounded-full text-white p-2 bg-transparent placeholder:text-indigo-100 text-center font-bold pr-10 w-52" />
+              <i class="fa-solid fa-magnifying-glass text-white absolute right-2 cursor-pointer"></i>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!--  small nav bar ended here  -->
+      <!-- ============================================================================================================ -->
+      <div class="header_right lg:flex md:flex justify-between items-center flex-1 lg:flex-row flex-col hidden">
+        <ul class="flex items-center justify-center lg:gap-20 lg:flex-row flex-col flex-grow">
+          <li class="">
+            <a href="#home" class="text-white hover:font-bold hover:text-gray-500">Home</a>
+          </li>
+          <li class="">
+            <a href="#" class="text-white hover:font-bold hover:text-gray-500">Projects</a>
+          </li>
+          <li class="">
+            <a href="#contact" class="text-white hover:font-bold hover:text-gray-500">Contact</a>
+          </li>
+          <li class="border px-3 py-1 rounded-full hover:bg-sky-500 hover:border-sky-500">
+            <a href="https://drive.google.com/file/d/1-9sgk9P-isdUUrrdypw-pIsd3iQl8dM9/view?usp=drive_link"
+              class="text-white hover:font-bold hover:text-black">Resume</a>
+          </li>
+        </ul>
+        <div class="tools flex items-center justify-center flex-grow justify-end p-5">
+          <div class="flex justify-center items-center border gap-1 rounded-full relative">
+            <input type="text" name="" id="" placeholder="Search"
+              class="outline-none rounded-full text-white p-2 bg-transparent placeholder:text-white text-center font-bold pr-10" />
+            <i class="fa-solid fa-magnifying-glass text-white absolute right-2 cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- nav bar ended here  -->
+    <!-- ============================================================================================================ -->
+  </div>
+  <!--  -->
+  <!-- Home -->
+  <div id="home" class="w-full bg-gray-300 h-screen absolut flex lg:items-center">
+    <div class="relative top-20 w-full">
+      <div class="flex lg:gap-10 gap-10 p-1 items-center lg:w-5/6 mx-auto flex-col-reverse lg:flex-row">
+        <div class="flex flex-col lg:gap-10 gap-3 lg:w-1/2 w-full">
+          <p class="text-center lg:text-start lg:text-5xl text-2xl font-bold uppercase text-gray-900">
+            Hi, I am <span class="text-blue-500"> Pradeep</span>
+          </p>
+          <p class="text-center lg:text-start lg:text-5xl text-2xl font-bold uppercase text-sky-900">
+            a Full Stack Developer
+          </p>
+          <p class="text-center lg:text-start lg:text-2xl text-sm font-bold uppercase text-black">
+            with expertise in
+            <span class="text-red-400 font-extrabold">Python and Django</span>
+          </p>
+        </div>
+        <div class="lg:w-1/2 flex items-center justify-center">
+          <img src="./assets/pradeep.jpg" alt="" class="my-img aspect-auto rounded-full border" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  =========================================================-->
+  <!-- contact -->
+  <!--  -->
+  <div id="contact" class="bg-gray-800 h-screen w-full">
+    <div class="container mx-auto relative top-28">
+      <!-- main -->
+      <div class="max-w-md mx-auto my-10 bg-gray-800 p-5 rounded-md shadow-sm lg:bg-gray-700">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-white">Contact Me</h1>
+          <p class="text-indigo-100 text-sm font-bold">
+            Fill up the form below to send me a message.
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="f5a0f97f-b265-4e7e-892d-47f57b2875c7" />
+            <input type="hidden" name="subject" value="New Submission from your Website" />
+            <input type="hidden" name="redirect" value="web3/thankyou.html" />
+            <input type="checkbox" name="botcheck" style="display: none" />
+
+            <div class="mb-6">
+              <label for="name" class="text-sm text-gray-200 font-bold capitalize">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="John Doe" required
+                class="w-full px-3 py-2 rounded-md bg-gray-200 text-blak font-bold outline-none" />
+            </div>
+            <div class="mb-6">
+              <label for="phone" class="text-sm text-gray-200 font-bold">Phone Number</label>
+              <input type="text" name="phone" id="phone" placeholder="+977 9800000000" required
+                class="w-full px-3 py-2 rounded-md bg-gray-200 text-blak font-bold outline-none" />
+            </div>
+            <div class="mb-6">
+              <label for="message" class="text-sm text-gray-200 font-bold">Your Message
+              </label>
+
+              <textarea rows="5" name="message" id="message" placeholder="Your Message (You can send your email here)"
+                class="w-full px-3 py-2 rounded-md bg-gray-200 text-blak font-bold outline-none" required></textarea>
+            </div>
+            <div class="mb-6">
+              <button type="submit"
+                class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                Send Message
+              </button>
+            </div>
+            <p class="text-base text-center text-gray-500" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("form");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      result.innerHTML = "Please wait...";
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = json.message;
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-green-500");
+          } else {
+            result.innerHTML = json.message;
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-red-500");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          setTimeout(() => {
+            result.style.display = "none";
+          }, 3000);
+        });
+    });
+  </script>
+  <!--  -->
+  <!-- ============================================ -->
+
+  <!-- ============================================ -->
+
+  <div class="bg-black w-full text-center font-extrabold text-white">
+    <p>🔧 Site in development process. Stay tuned for updates! 🔧</p>
+  </div>
+
+  <!--  -->
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const open_small_nav = document.getElementById("open_small_nav");
+    const small_nav = document.getElementById("small_nav");
+    const close_small_nav = document.getElementById("close_small_nav");
+
+    small_nav.style.display = "none";
+
+    open_small_nav.addEventListener("click", () => {
+      small_nav.style.display = "block";
+    });
+
+    close_small_nav.addEventListener("click", () => {
+      small_nav.style.display = "none";
+    });
+  });
+</script>
+
+</html>
